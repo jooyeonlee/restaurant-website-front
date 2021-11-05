@@ -1,0 +1,100 @@
+.section-main {
+    position: relative !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.footer {
+    padding: 4em 0 !important; 
+}
+
+.footer a {
+    color: white; 
+    text-decoration: none;
+}
+
+.footer .border-top {
+    border-color: lighten(grey,5%) !important;
+}
+
+.footer p {
+    color: rgba(255,255,255,.5);
+}
+
+.footer Link:hover {
+    color: lightgrey; 
+    text-decoration: none;
+}
+
+.footer .logo {
+    line-height: 1.2; 
+    font-size: 28px;
+    color: white;
+}
+
+.footer-heading {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px; 
+}
+
+.footer-social li {
+    list-style: none;
+    margin: 0 10px 0 0;
+    display: inline-block; 
+}
+    
+.footer-social li a {
+    height: 40px;
+    width: 40px;
+    display: block;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid grey;
+    position: relative; 
+}
+      
+.footer-social li a span {
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+}
+      
+.footer-social li a:hover {
+    border: 1px solid #fff8a1; 
+}
+
+.block-21 .img-thumbnail {
+    height: 80px;
+    width: 80px;
+    margin-right: 8px; 
+}
+
+.block-23 ul {
+  padding: 0; 
+}
+
+.block-23 ul li > a {
+    text-decoration: none;
+}
+  
+.block-23 ul li .fas, .block-23 ul li .text {
+    display: table-cell;
+    vertical-align: top; 
+    color: white;
+    text-decoration: none;
+    padding:7px;
+    border:1px transparent;
+}
+  
+.block-23 ul li .fas {
+    width: 40px;
+    font-size: 18px;
+    text-decoration: none;
+}

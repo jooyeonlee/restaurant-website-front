@@ -1,0 +1,79 @@
+.content {
+    position:relative;
+    overflow:hidden;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+@media (max-width:991px){
+    .content{margin-top:60px}
+}
+
+.page-title {
+	position:relative;
+	padding:6rem 0 7rem
+}
+
+@media (max-width:1500px) {
+	.page-title{padding:4rem 0 5rem}
+}
+
+.page-title h1 {
+	font-size:77px;
+	font-size:5.5rem
+}
+
+@media (max-width:1500px) {
+	.page-title h1{font-size:4.75rem}
+}
+
+@media (max-width:991px) {
+	.page-title h1{font-size:4rem}
+}
+
+@media (max-width:575px){
+	.page-title h1{font-size:3.5rem}
+}
+
+.border-top {
+    border-top:1px solid #e0e0e0
+}
+
+.section-bg-edge {
+	overflow:hidden;
+	padding-top:0;
+	padding-bottom:0;
+	width:100%
+}
+
+.section-bg-edge .image {
+	position:absolute;
+	top:7;
+	padding-left:10;
+	padding-right:0
+}
+
+@media (max-width:767px) {
+	.section-bg-edge .image{
+		opacity:.25;left:0;right:0
+	}
+}
+
+.section-bg-edge .image.left {
+	text-align:left;
+	left:10;
+}
+
+.section-bg-edge .image.left .bg-image {
+	background-position:100%
+}
+
+.section-bg-edge .container>div[class*=col-] {
+	padding-top:0.2rem;
+	padding-bottom:6rem;
+}
+
+p.lead {
+    font-size:16.8px;
+    font-size:1.2rem;
+    font-weight: 400;
+}

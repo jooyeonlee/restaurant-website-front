@@ -1,0 +1,27 @@
+.content {
+    position:relative;
+    overflow:hidden;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.page-title {
+	position:relative;
+	padding:0;
+}
+
+.checkout-title h1 {
+	font-size:70px;
+	font-size:5.5rem;
+}
+
+@media (max-width:1500px) {
+	.checkout-title h1{font-size:5rem}
+}
+
+@media (max-width:991px) {
+	.checkout-title h1{font-size:4rem}
+}
+
+@media (max-width:575px){
+	.checkout-title h1{font-size:3.5rem}
+}

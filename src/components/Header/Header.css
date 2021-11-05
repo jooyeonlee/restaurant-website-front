@@ -1,0 +1,89 @@
+.navbar {
+    font-family: 'Nunito Sans', sans-serif;
+}
+.navbar-brand {
+    align-self: flex-start;
+}
+
+#navbarSupportedContent{
+    z-index: 1;
+}
+  
+.navbar-brand img {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    max-height: 200px;
+    object-fit: contain;
+    z-index: 1;
+}
+
+@media (max-width: 1000px) {
+    .navbar-brand img {
+        left: 40vw;
+        max-height: 16vw;
+    }
+}
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.navbar-nav.navbar-right {
+    position: absolute;
+    right: 10%;
+    transform: translatex(-10%);
+}
+
+.nav-link:hover{
+    color: #ddae71;
+}
+
+.cart-value {
+    font-size: 1.2rem;
+    border-left: 1px solid grey;
+    margin-left: 0.75rem;
+    padding-left: 0.75rem;
+}
+
+.cart-value:hover {
+    opacity: 0.6;
+}
+
+.navlink i {
+    font-size: 1.7rem;
+    display: inline-block;
+    color: grey;
+}
+
+#sign{
+    margin-left: 20px;
+    padding-left: 100px;
+}
+
+.nav-item .btn {
+  background-color: #ddd;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 24px;
+}
+
+.nav-item .btn-default {
+  background-color: black;
+  color: white;
+}
+
+.nav-item .btn-grey {
+  color: black;
+}
+
+.name {
+    margin-left: 5px;
+}

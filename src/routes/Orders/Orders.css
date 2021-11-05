@@ -1,0 +1,13 @@
+.orders-page {
+    position: relative !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+    font-family: 'Nunito Sans', sans-serif;
+}
+  
+.orders-content-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}

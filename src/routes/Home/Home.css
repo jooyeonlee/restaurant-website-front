@@ -1,0 +1,390 @@
+.section-main {
+    position: relative !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 40vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item > img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-indicators .active {
+    background-color: rgb(215, 215, 215);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(50%);
+}
+
+.zooming {
+    animation: zooming 18s infinite both;
+}
+
+@keyframes zooming {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+#about {
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%;
+}
+
+@media (max-width:1000px) {
+    #about .image{
+        opacity: 0.25;
+        left: 0;
+        right: 0;
+    }
+}
+
+#chef-img{
+    position: absolute;
+    padding-left: 10rem;
+    padding-right: 0;
+    text-align: left;
+    left: 30;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.bg-image{
+    background-position: center right;
+}
+
+#about-text{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+#about-text h1{
+    color: #ddae71;
+    padding-bottom: 2rem;
+}
+
+.checked {
+    color: orange;
+    padding-right: 0.3rem;
+}
+
+.blockquote { 
+    position: relative;
+    border:0;
+    padding:0;
+    margin-bottom:rem;
+    font-size:20px;
+    font-size:1.25rem;
+}
+
+.blockquote-content {
+    position:relative;
+    background-color:#f3f4f4;
+    padding:2rem;
+    margin-bottom:.8rem
+}
+
+.blockquote-content:after {
+    position:absolute;
+    top:100%;
+    right:0;
+    width:0;
+    height:0;
+    border-color:rgba(0,0,0,0) #f3f4f4 rgba(0,0,0,0) rgba(0,0,0,0);
+    border-style:solid;
+    border-width:0 20px 20px 0;
+    content:"";
+}
+
+.blockquote-content p { 
+    font-size:20px;
+    font-size:1.5rem;
+    font-weight:200;
+    line-height:1.3;
+    margin-bottom:0;
+}
+
+.blockquote:nth-child(2n-1) { 
+    margin-right:4.5rem;
+}
+
+.blockquote:nth-child(2n) {
+    margin-left:4.5rem;
+}
+
+@media (max-width:575px) {
+    .blockquote:nth-child(2n-1) { 
+        margin-right:1rem
+    }
+    .blockquote:nth-child(2n) { 
+        margin-left:1rem
+    }
+}
+
+.blockquote-footer {
+    display:block;
+    color:#6c757d;
+    font-size:12px;
+    font-size:.7rem;
+    padding:1rem 2rem;
+    font-weight:500
+}
+
+.blockquote-footer:before { 
+    display:none;
+}
+
+.blockquote footer img { 
+    border-radius:50%;
+    width:32px;
+    margin-right:.6rem;
+}
+
+.blockquote footer .name {
+    color: lightgrey;
+    white-space:nowrap;
+}
+
+.animated {
+    animation-delay: 2s;
+    animation: slidein 2s;
+}
+
+@keyframes slidein {
+    from {
+        transform: translateX(-100%);
+    }
+    
+    to {
+        transform: translateX(0%);
+    }
+  }
+
+.animated2 {
+    animation-delay: 2s;
+    animation: slidein2 2s;
+}
+
+@keyframes slidein2 {
+    from {
+        transform: translateX(100%);
+    }
+    
+    to {
+        transform: translateX(0%);
+    }
+}
+
+#menu-category-container {
+    position:relative;
+    padding-top:5rem;
+    padding-bottom:5rem;
+    background-color: rgb(243, 244, 244);
+}
+
+.menu-title {
+    margin-bottom: 5rem;
+    color: rgb(56, 60, 64);
+    font-size:45px;
+    font-size:4rem;
+    font-weight:100;
+}
+
+.menu-category {
+    position:relative;
+    height: 450px;
+    overflow:hidden;
+}
+
+.menu-category .img-fluid {
+    -webkit-transition:all 1.5s ease-out;
+    transition:all 1.5s ease-out;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-category .title{
+    position:absolute;
+    bottom:63px;
+    bottom:4.5rem;
+    right:63px;
+    right:4.5rem;
+    color:#fff;
+    font-size:60px;
+    font-size:5rem;
+    font-weight:100;
+    margin-bottom:0;
+}
+
+@media (max-width:991px){
+    .menu-category  .title{
+        font-size:4rem;
+    }
+}
+
+.menu-category:hover .img-fluid {
+    -webkit-transform:scale(1.05);
+    -ms-transform:scale(1.05);
+    transform:scale(1.05);
+}
+
+.menu-category-carousel {
+    margin-bottom:0;
+}
+
+.inner-controls .slick-next:before,.inner-controls .slick-prev:before {
+    text-shadow:0 0 10px rgba(0,0,0,.3);
+    color:rgb(224, 221, 221);
+}
+
+.inner-controls .slick-prev {
+    z-index:10;
+    left:25px;
+}
+
+.inner-controls .slick-next {
+    right:25px;
+}
+
+.inner-controls .slick-dots {
+    position:absolute;
+    bottom:20px;
+}
+
+#promocontainer {
+    width: 100%;
+    height: 700px;
+}
+
+.bg-fixed {
+    left: 0;
+    width:100%;
+    height:700px;
+    background-image: url('https://restaurantproject-2021.s3.amazonaws.com/sushibackground6.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+@media (max-width:767px){
+    .bg-fixed{background-attachment:scroll}
+}
+
+.contentpromo {
+    padding-top: 5%;
+    padding-bottom: 15%
+}
+
+.tastetext {
+    color:white;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.button-center {
+    margin-top: 3rem;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    height: 70px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration:none;
+}
+
+.button:hover {
+    color:rgb(215, 215, 215);
+}
+
+.button span:nth-child(1) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scaleY(0);
+    background-color: white;
+    width: 4px;
+    height: 100%;
+    transition: all 0.5s;
+    transform-origin: bottom
+}
+
+.button:hover span:nth-child(1) {
+    transform: scaleY(1)
+}
+
+.button span:nth-child(2) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scaleX(0);
+    background-color: white;
+    width: 100%;
+    height: 4px;
+    transition: all 0.5s;
+    transform-origin: left
+}
+
+.button:hover span:nth-child(2) {
+    transform: scaleX(1)
+}
+
+.button span:nth-child(3) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scaleY(0);
+    background-color: white;
+    width: 4px;
+    height: 100%;
+    transition: all 0.5s;
+    transform-origin: top
+}
+
+.button:hover span:nth-child(3) {
+    transform: scaleY(1)
+}
+
+.button span:nth-child(4) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    background-color: white;
+    width: 100%;
+    height: 4px;
+    transition: all 0.5s;
+    transform-origin: top
+}
+
+.button:hover span:nth-child(4) {
+    transform: scaleX(1)
+}

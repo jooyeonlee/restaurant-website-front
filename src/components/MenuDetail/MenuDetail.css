@@ -1,0 +1,93 @@
+.modal-header{
+    height: 150px;
+    background-image: url("https://restaurantproject-2021.s3.amazonaws.com/sushi7.jpg");
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.modal-header h4{
+    color: rgb(224, 222, 222);
+}
+
+.modal-body{
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 0;
+}
+
+.modal-menu-detail {
+    background-color: rgb(243, 244, 244);
+    height: 150px;
+    padding: 20px;
+}
+
+.panel-details-container {
+    padding: 20px;
+}
+
+.accordion *:focus {
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+    background-color: transparent;
+}
+
+.custom-control-label:before{
+    background-color:white;
+    border-color: grey;
+}
+  
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+    background-color:white;
+    border-color: grey;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after{
+    background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='grey' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+    border-color: grey;
+}
+
+.custom-checkbox .custom-control-input:focus~.custom-control-label::before{
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(206, 206, 206, 0.25); 
+    border-color: grey;
+}
+
+.modal-btn {
+    transition: all .5s ease;
+    color: #fff;
+    border: 3px solid white;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 17px;
+    background-color: black;
+    padding: 10px;
+    outline: none;
+    border-radius: 4px;
+}
+
+.modal-btn:focus,.modal-btn:hover {
+    color: #001F3F;
+    background-color: #fff
+}
+
+.btn-lg {
+    padding:0 0;
+    font-size:16px;
+    font-size:1rem;
+    border-radius:0;
+    height:calc(3rem + 2px)
+}
+
+@media (max-width:575px){
+    .btn-lg{
+        padding-left:1.5rem;
+        padding-right:1.5rem
+    }
+}
+
+.incrementer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
